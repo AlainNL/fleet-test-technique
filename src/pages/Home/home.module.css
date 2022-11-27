@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@200&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  margin: 1em 1em auto;
+  background-color: white;
+}
+
+.grid {
+  display: grid;
+  margin-left: 5px;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 0.2em;
+  justify-content: center;
+}
+
+.header{
+  background-color: var(--secondary-color);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+nav ul{
+  display: flex;
+}
+nav ul li{
+  list-style: none;
+  margin-right: 1rem;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.2rem 0.6rem;
+  position: relative;
+}
+nav ul li a::before{
+  content: "";
+  position: absolute;
+  top:-10px;
+  left:50%;
+  height: 3px;
+  width:0;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover:before{
+  width:100%;
+}
+nav ul li a:focus{
+  background-color: var(--primary-color);
+  opacity: 0.2px;
+  border-radius: 20px;
+}
+nav ul li a:focus::before{
+  width: 0%;
+}
