@@ -21,10 +21,14 @@ const Home = () => {
 
   return (
       <div className={styles.container}>
+            <div className="Header">
+            <SearchBar />
+            </div>
             <div className={styles.grid}>
-              <SearchBar />
+
                 {movies.map((movieReq) =>
-            <MovieBox key={movieReq.id} {...movieReq} /> )}
+            <MovieBox key={movieReq.id} {...movieReq} />
+            )}
             </div>
       </div>
   );

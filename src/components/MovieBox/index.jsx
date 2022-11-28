@@ -4,6 +4,7 @@ import { Modal, show } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 
 
+
 const API_IMG = "https://image.tmdb.org/t/p/w500";
 
 const MovieBox = ({title, poster_path, vote_average, release_date, overview}) => {
@@ -17,6 +18,8 @@ const MovieBox = ({title, poster_path, vote_average, release_date, overview}) =>
       <div className={styles.card__params}>
           <div className={styles.card_body}>
             <img className={styles.card__img} src={API_IMG+poster_path} />
+            <h5>Release Date: {release_date}</h5>
+            {title}
             <div className={styles.card_body}>
                 <button type="button" className='btn btn-dark' onClick={handleShow}> View More</button>
                 <Modal show={show} onHide={handleClose}>
