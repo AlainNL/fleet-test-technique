@@ -9,27 +9,43 @@ body {
   outline: none;
 }
 
-.container {
-  width: 100%;
-  margin: 1em 1em auto;
-  background-color: white;
-}
-
-
-.grid {
-  display: grid;
-  margin-left: 5px;
-  grid-template-columns: repeat(1,2fr);
-  grid-gap: 0.2em;
-  justify-content: center;
-}
-
-.header{
-  background-color: var(--secondary-color);
-  height: 100px;
-  width: 100%;
+.header__content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: grid;
+  padding: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  background-color: #0f1014;
+  color: white;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 500px;
+  align-items: flex-end;
+  background-position: top center;
+  background-size: cover;
+}
+
+.hero__content {
+  color: grey;
+}
+
+.max-center {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
