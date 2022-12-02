@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@200&display=swap');
+
+.nav.sticky {
+  position: sticky;
+  top: 0;
+}

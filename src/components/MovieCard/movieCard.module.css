@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@200&display=swap');
+
+.movie-infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__img {
+  width: 100%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
