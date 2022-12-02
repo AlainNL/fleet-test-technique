@@ -24,7 +24,7 @@ const Home = () => {
         setSelectedMovie(data.results[0]);
         console.log(data);
       });
-  }, []);
+  }, [query]);
 
   const searchMovie = async (e) => {
     e.preventDefault();
