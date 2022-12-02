@@ -2,13 +2,10 @@ import React, { useEffect, useState } from "react";
 import MovieCard from "../../components/MovieCard";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./home.module.css";
-import SearchIcon from "@mui/icons-material/Search";
+import Navbar from "../../components/NavBar";
 
 const API_URL =
   "https://api.themoviedb.org/3/movie/popular?api_key=eda25039ca2db0c207beac572dc11346";
-const API_SEARCH =
-  "https://api.themoviedb.org/3/search/movie?api_key=eda25039ca2db0c207beac572dc11346&query";
-const IMG_PATH = "https://image.tmdb.org/t/p/500";
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
@@ -47,10 +44,11 @@ const Home = () => {
 
   return (
     <div className="general">
+      <Navbar />
       <div className={styles.header}>
         <div className={styles.header__content}>
           <h1>AlloMovies</h1>
-          <form className="d-flex" onSubmit={searchMovie} autoComplete="on">
+          <form className="d-flex" onSubmit={searchMovie}>
             <input
               type="search"
               placeholder="Enter Movie Name"
