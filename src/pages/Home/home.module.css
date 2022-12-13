@@ -53,8 +53,7 @@ body {
   color: white;
   text-align: center;
 }
-
-
+n
 
 .input__text {
   border-radius: 15px;
@@ -73,7 +72,7 @@ body {
 .all__movie {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 15px;
+  margin: 16px;
   justify-content: space-around;
 }
 

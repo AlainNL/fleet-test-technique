@@ -12,7 +12,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
   });
 
-  return <nav classame={`${sticky ? "sticky" : ""}`}></nav>;
+  return <nav className={`${sticky ? "sticky" : ""}`}></nav>;
 };
 
 export default Navbar;
